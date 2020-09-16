@@ -1,0 +1,60 @@
+asgiref==3.2.10
+django-crispy-forms==1.9.2
+Pillow==7.2.0
+pytz==2020.1
+sqlparse==0.3.1
+django-allauth
+phonenumbers # https://github.com/daviddrysdale/python-phonenumbers
+django-phonenumber-field # https://github.com/stefanfoulis/django-phonenumber-field
+django-phone-field
+
+# python manage.py runserver
+
+# python manage.py createsuperuser
+# python manage.py startapp orders
+# python manage.py makemigrations orders
+# python manage.py migrate orders
+
+
+
+
+# раскоментировать:
+# #uncomment
+# try:
+#     from .settings_prod import *
+# except:
+#     pass
+
+# python manage.py collectstatic
+# python manage.py dumpdata --indent=3 > initial_data.json
+
+# echo "# TangoShop" >> README.md
+# git init
+# git add README.md
+# git commit -a -m "first commit"
+# git branch -M master
+# git remote add origin https://github.com/iTango21/Tango_Shop.git
+# git push -u origin master
+
+# git init
+# git add .
+# git commit -a -m "2 commit"
+# git branch -M master
+# git remote add origin https://github.com/iTango21/Tango_Shop.git
+# git push -u origin master
+
+# НА СЕРВЕРЕ:
+#
+# root@tangoserver:/# cd /webapps/tango_shop
+#
+# root@tangoserver:/# sudo su - tango_shop_u
+# tango_shop_u@tangoserver:~$ source env/bin/activate
+#
+# (env) tango_shop_u@tangoserver:~$ git init
+# ЭТО ЛИШНЕЕ!!! (env) tango_shop_u@tangoserver:~$ git remote add origin https://github.com/iTango21/TangoShop.git
+# (env) tango_shop_u@tangoserver:~$ git pull origin master
+#
+# ...и перезагрузить:
+#
+# supervisorctl restart tango_shop
+
